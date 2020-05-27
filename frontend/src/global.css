@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 14px Roboto, sans-serif;/* se não achar a fonte q eu coloquei coloca a sans-serif*/
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;/*Deixa a fonte mais perceptivel*/
+}
+
+input, button, textarea {
+    font: 400 18px Roboto, sans-serif;
+}
+
+button{
+    cursor: pointer;/*cursor com icone pra clicar*/
+}
+
+form input {
+    width: 100%;
+    height: 60px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+form textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 140px;
+    height: 60px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 16px 24px;
+    line-height: 24px;
+}
+
+.button {/*crio uma classe pra estilizar todos os botões*/
+    width: 100%;
+    height: 60px;
+    background: #e02041;
+    corder: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 16px;/*distanciar botao do topo*/
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: 0.2s;/*demora 0.2 segundos para fazer a transição q eu descrevi abaixo => hover*/
+}
+
+.button:hover{
+    filter: brightness(90%);/*pra escurecer o botão quando passar por cima*/
+}
+
+.back-link{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #41414d;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;/*quando passar mouse por cima quero diminuir a opacidade para 0.8, descrevi no hover abaixo*/
+}
+
+.back-link svg{
+    margin-right: 8px;
+}
+
+.back-link:hover{
+    opacity: 0.8; 
+}   
